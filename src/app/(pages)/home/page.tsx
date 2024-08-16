@@ -23,7 +23,7 @@ export default function Home() {
     setIsOpen3(!isOpen3)
   }
 
-  const items: ProductItem[] = [
+  const items = [
     {
       imageUrl:
         'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://reactjs.com/&size=24',
