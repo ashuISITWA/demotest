@@ -4,7 +4,7 @@ import 'react-tabs/style/react-tabs.css'
 
 import { BiSolidCheckCircle } from 'react-icons/bi'
 
-function classNames(...classes) {
+function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(' ')
 }
 
