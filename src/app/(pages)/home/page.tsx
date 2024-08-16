@@ -118,33 +118,30 @@ export default function Home() {
               <div className="flex flex-col gap-[10px]">
                 <h3 className="text-[20px] font-semibold text-black dark:text-white">Filter Boilerplates</h3>
                 <div className="border-b border-gray-200">
-                  <button
-                    className="flex w-full items-center justify-between p-4 text-left text-black dark:text-white"
-                    onClick={toggleAccordion}
-                  >
-                    <span className="text-[16px] font-medium">Type</span>
-                    <span>{isOpen ? '-' : '+'}</span>
-                  </button>
-                  {isOpen && (
-                    <div className="flex flex-col gap-1">
-                      {/*  */}
-                      <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-                        <label htmlFor="="vehicle1" className="flex w-full cursor-pointer gap-1 py-[6px]">
-                          <IconPencil stroke={1} /> <span>Design Kit</span>{' '}
-                        </label>
-                      </div>
-                      <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
-                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-                        <label htmlFor="="vehicle2" className="flex w-full cursor-pointer gap-1 py-[6px]">
-                          <IconLayoutSidebarRight stroke={1} /> <span>Boilerplate</span>{' '}
-                        </label>
-                      </div>
-
-                      {/*  */}
-                    </div>
-                  )}
-                </div>
+      <button
+        className="flex w-full items-center justify-between p-4 text-left text-black dark:text-white"
+        onClick={toggleAccordion}
+      >
+        <span className="text-[16px] font-medium">Type</span>
+        <span>{isOpen ? '-' : '+'}</span>
+      </button>
+      {isOpen && (
+        <div className="flex flex-col gap-1">
+          <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label htmlFor="vehicle1" className="flex w-full cursor-pointer gap-1 py-[6px]">
+              <IconPencil stroke={1} /> <span>Design Kit</span>
+            </label>
+          </div>
+          <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+            <label htmlFor="vehicle2" className="flex w-full cursor-pointer gap-1 py-[6px]">
+              <IconLayoutSidebarRight stroke={1} /> <span>Boilerplate</span>
+            </label>
+          </div>
+        </div>
+      )}
+    </div>
                 <div className="border-b border-gray-200">
                   <button
                     className="flex w-full items-center justify-between p-4 text-left text-black dark:text-white"
@@ -718,7 +715,8 @@ export default function Home() {
           </div>
               </div>
             </div>
-          </div>
+         
+        </div>
         </div>
       </section>
       <Footer />
