@@ -10,8 +10,8 @@ interface ProductItem {
   person: string;
   pername: string;
   reviews: string;
-  price: number;
-  totalprice: number;
+  price: number | string;
+  totalprice: number | string;
 }
 
 // Define the props interface for ProductBlock
