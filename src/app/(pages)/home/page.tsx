@@ -36,8 +36,8 @@ export default function Home() {
       link: '/',
       pername: 'Tony',
       reviews: '5 Reviews',
-      price: Number('price_string'),
-      totalprice: '100.00',
+      price: Number('199.45'),
+      totalprice: Number('123.45') ,
     },
 
     // Add more items here
