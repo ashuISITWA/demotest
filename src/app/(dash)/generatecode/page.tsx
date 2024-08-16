@@ -18,7 +18,8 @@ export default function Page() {
   let [isOpen, setIsOpen] = useState(false)
   let [isOpen1, setIsOpen1] = useState(false)
 
-  const textRef = useRef(null)
+  // Properly typed ref for span element
+  const textRef = useRef<HTMLSpanElement>(null)
 
   const handleCopy = () => {
     if (textRef.current) {
@@ -26,15 +27,16 @@ export default function Page() {
       navigator.clipboard
         .writeText(text)
         .then(() => {
-          //   console.log('Text copied to clipboard')
+          console.log('Text copied to clipboard')
           // Optionally, provide some feedback to the user
-          //   alert('Text copied to clipboard')
+          alert('Text copied to clipboard')
         })
         .catch((err) => {
-            console.error('Failed to copy text: ', err)
+          console.error('Failed to copy text: ', err)
         })
     }
   }
+
   return (
     <>
       <div className="flex flex-wrap items-end justify-between gap-4">
@@ -62,7 +64,7 @@ export default function Page() {
               </div>
             </div>
             <div className="mt-4 block">
-              <Table className="">
+              <Table>
                 <TableHead>
                   <TableRow>
                     <TableHeader>Code</TableHeader>
@@ -85,19 +87,6 @@ export default function Page() {
                     <TableCell>Purchase</TableCell>
                     <TableCell className="text-right">31 July 2024</TableCell>
                   </TableRow>
-                  {/* <TableRow>
-                    <TableCell>
-                      <div className="flex items-center gap-2">
-                        <button type="button" onClick={handleCopy}>
-                          <IconCopy stroke={2} className="w-[15px]" />
-                        </button>
-                        <span ref={textRef}>jNBV4pTcaonoYF'3</span>
-                      </div>
-                    </TableCell>
-                    <TableCell className="text-zinc-500">Product Name2</TableCell>
-                    <TableCell>Refund</TableCell>
-                    <TableCell className="text-right">4 July 2024</TableCell>
-                  </TableRow> */}
                 </TableBody>
               </Table>
             </div>
@@ -107,7 +96,6 @@ export default function Page() {
       {/* pop up */}
       <Dialog open={isOpen} onClose={setIsOpen}>
         <DialogTitle>Generate Code</DialogTitle>
-
         <DialogBody>
           <Field>
             <Label>Product Name</Label>
@@ -122,7 +110,6 @@ export default function Page() {
         </DialogActions>
       </Dialog>
       {/* refund code */}
-
       <Dialog open={isOpen1} onClose={setIsOpen1}>
         <DialogTitle>Refund payment</DialogTitle>
         <Text>The refund will be reflected in the customer’s bank account 2 to 3 business days after processing.</Text>
@@ -130,7 +117,7 @@ export default function Page() {
           <div className="flex flex-col gap-3">
             <Field>
               <Label>Code</Label>
-              <Textarea name="" id="" rows="5"></Textarea>
+              <Textarea name="" id="" rows={5}></Textarea>
             </Field>
             <Field>
               <Label>Reason</Label>
@@ -153,7 +140,7 @@ export default function Page() {
           </div>
         </DialogBody>
         <DialogActions>
-          <Button className="cursor-pointer" plain onClick={() => setIsOpen(false)}>
+          <Button className="cursor-pointer" plain onClick={() => setIsOpen1(false)}>
             Cancel
           </Button>
           <Button className="cursor-pointer">Save</Button>
