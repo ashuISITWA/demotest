@@ -1,4 +1,17 @@
-const ImageTextList = ({ imgitems }) => {
+import React from 'react';
+
+// Define the interface for the items prop
+interface ImgItem {
+  imageUrl: string;
+  text: string;
+}
+
+// Define the props interface for ImageTextList
+interface ImageTextListProps {
+  imgitems: ImgItem[];
+}
+
+const ImageTextList: React.FC<ImageTextListProps> = ({ imgitems }) => {
   return (
     <>
       {imgitems.map((item, index) => (
@@ -12,7 +25,7 @@ const ImageTextList = ({ imgitems }) => {
         </div>
       ))}
     </>
-  )
-}
+  );
+};
 
-export default ImageTextList
+export default ImageTextList;
