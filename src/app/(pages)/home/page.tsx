@@ -23,7 +23,7 @@ export default function Home() {
     setIsOpen3(!isOpen3)
   }
 
-  const items = [
+  const items: ProductItem[] = [
     {
       imageUrl:
         'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://reactjs.com/&size=24',
@@ -36,7 +36,7 @@ export default function Home() {
       link: '/',
       pername: 'Tony',
       reviews: '5 Reviews',
-      price: '79.00',
+      price: Number('price_string'),
       totalprice: '100.00',
     },
 
