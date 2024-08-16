@@ -30,18 +30,18 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ items }) => {
             </div>
             <div className="flex flex-col gap-[10px] p-[15px]">
               <Link href="/">
-                <a>
+                <div>
                   <h6 className="float-start rounded-full bg-slate-300 px-[6px] text-[12px] text-black">{item.tag}</h6>
-                </a>
+                </div>
               </Link>
               <Link href="/">
-                <a className="text-[18px] font-semibold leading-[20px] text-black dark:text-white">
+                <div className="text-[18px] font-semibold leading-[20px] text-black dark:text-white">
                   {item.title}
-                </a>
+                </div>
               </Link>
               <p className="text-[14px] leading-[20px] text-slate-400 line-clamp-2">{item.des}</p>
               <Link href="/">
-                <a className="flex items-center gap-[15px]">
+                <div className="flex items-center gap-[15px]">
                   <div className="flex-shrink-0">
                     <img
                       src={item.person}
@@ -52,7 +52,7 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ items }) => {
                   <div className="flex-grow-1">
                     <p className="text-[14px] italic leading-[20px] text-black dark:text-white">by {item.pername}</p>
                   </div>
-                </a>
+                </div>
               </Link>
               <div className="flex items-center gap-[10px]">
                 <div className="flex-shrink-0">
@@ -72,9 +72,9 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ items }) => {
                 ${item.price} <span className="font-normal italic line-through">${item.totalprice}</span>
               </h6>
               <Link href="/">
-                <a className="inline-block rounded-lg bg-black py-[8px] text-center text-white hover:bg-[#222] dark:bg-white dark:text-black dark:hover:bg-[#cfcfcf]">
+                <div className="inline-block rounded-lg bg-black py-[8px] text-center text-white hover:bg-[#222] dark:bg-white dark:text-black dark:hover:bg-[#cfcfcf]">
                   Buy Now
-                </a>
+                </div>
               </Link>
             </div>
           </div>

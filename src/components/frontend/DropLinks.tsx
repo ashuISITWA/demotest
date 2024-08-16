@@ -18,7 +18,7 @@ const DropLinks: React.FC<DropLinksProps> = ({ items }) => {
     <>
       {items.map((item, index) => (
         <Link href={item.link} className="flex gap-2" key={index}>
-          <a className="flex gap-2">
+          <div className="flex gap-2">
             <div className="flex-shrink-0">
               <div className="inline-block h-[15px] w-[15px] rounded-full">
                 <img src={item.imageUrl} alt={item.text} />
@@ -28,7 +28,7 @@ const DropLinks: React.FC<DropLinksProps> = ({ items }) => {
               <h3 className="text-[14px] text-black dark:text-white">{item.title}</h3>
               <h4 className="text-[14px] text-slate-400">{item.text}</h4>
             </div>
-          </a>
+          </div>
         </Link>
       ))}
     </>
