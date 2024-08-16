@@ -130,13 +130,13 @@ export default function Home() {
                       {/*  */}
                       <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-                        <label for="vehicle1" className="flex w-full cursor-pointer gap-1 py-[6px]">
+                        <label htmlFor="="vehicle1" className="flex w-full cursor-pointer gap-1 py-[6px]">
                           <IconPencil stroke={1} /> <span>Design Kit</span>{' '}
                         </label>
                       </div>
                       <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
                         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-                        <label for="vehicle2" className="flex w-full cursor-pointer gap-1 py-[6px]">
+                        <label htmlFor="="vehicle2" className="flex w-full cursor-pointer gap-1 py-[6px]">
                           <IconLayoutSidebarRight stroke={1} /> <span>Boilerplate</span>{' '}
                         </label>
                       </div>
@@ -158,13 +158,13 @@ export default function Home() {
                       {/*  */}
                       <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
                         <input type="checkbox" id="car1" name="car1" value="Bike" />
-                        <label for="car1" className="flex w-full cursor-pointer gap-1 py-[6px]">
+                        <label htmlFor="car1" className="flex w-full cursor-pointer gap-1 py-[6px]">
                           <IconCoin stroke={1} /> <span>$200</span>{' '}
                         </label>
                       </div>
                       <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
                         <input type="checkbox" id="car3" name="car3" value="Car" />
-                        <label for="car3" className="flex w-full cursor-pointer gap-1 py-[6px]">
+                        <label htmlFor="car3" className="flex w-full cursor-pointer gap-1 py-[6px]">
                           <IconCoin stroke={1} /> <span>$250</span>{' '}
                         </label>
                       </div>
@@ -186,13 +186,13 @@ export default function Home() {
                       {/*  */}
                       <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
                         <input type="checkbox" id="bike1" name="bike1" value="Bike" />
-                        <label for="bike1" className="flex w-full cursor-pointer gap-1 py-[6px]">
+                        <label htmlFor="bike1" className="flex w-full cursor-pointer gap-1 py-[6px]">
                           <IconPencil stroke={1} /> <span>Next js</span>{' '}
                         </label>
                       </div>
                       <div className="flex gap-1 rounded-lg bg-[#f3f3f3] px-[10px]">
                         <input type="checkbox" id="bike2" name="bike2" value="Car" />
-                        <label for="bike2" className="flex w-full cursor-pointer gap-1 py-[6px]">
+                        <label htmlFor="bike2" className="flex w-full cursor-pointer gap-1 py-[6px]">
                           <IconLayoutSidebarRight stroke={1} /> <span>React js</span>{' '}
                         </label>
                       </div>
