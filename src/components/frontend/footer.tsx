@@ -16,19 +16,19 @@ const Footer = () => {
     }
   }, [])
 
-  const handleThemeChange = (newTheme) => {
-    setTheme(newTheme)
-    document.documentElement.classList.remove('light', 'dark')
-
+  const handleThemeChange = (newTheme: 'light' | 'dark' | 'system') => {
+    setTheme(newTheme);
+    document.documentElement.classList.remove('light', 'dark');
+  
     if (newTheme === 'system') {
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-      document.documentElement.classList.add(systemTheme)
-      localStorage.removeItem('theme')
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.classList.add(systemTheme);
+      localStorage.removeItem('theme');
     } else {
-      document.documentElement.classList.add(newTheme)
-      localStorage.setItem('theme', newTheme)
+      document.documentElement.classList.add(newTheme);
+      localStorage.setItem('theme', newTheme);
     }
-  }
+  };
   return (
     <>
       <footer className="block bg-white dark:bg-black">
