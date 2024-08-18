@@ -1,21 +1,56 @@
-import { IconDeviceImac, IconMoon, IconSun } from '@tabler/icons-react'
+import { IconDeviceImac, IconMenu, IconMoon, IconSearch, IconSun } from '@tabler/icons-react'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation';
+import Image from 'next/image'
+import { useEffect, useState } from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io'
 import DropLinks from '../../components/frontend/DropLinks'
-import { IconMenu } from '@tabler/icons-react';
-
+import logo from '../../images/logo.jpg'
 
 const Header = () => {
 
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    setIsSticky(scrollTop > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+
+
+
   // State to track the toggle
-  const [isToggled, setIsToggled] = useState(false);
+  const [isToggled, setIsToggled] = useState(false)
 
   // Function to toggle the state
   const toggleClass = () => {
-    setIsToggled(!isToggled);
-  };
+    setIsToggled(!isToggled)
+  }
 
+  // Define state to track the active class
+  const [isActive, setIsActive] = useState(false)
+
+  // Toggle the active state when button is clicked
+  const toggleClass1 = () => {
+    setIsActive(!isActive)
+  }
+
+  // Define state to track the active class
+  const [isActive2, setIsActive2] = useState(false)
+
+  // Toggle the active state when button is clicked
+  const toggleClass2 = () => {
+    setIsActive2(!isActive2)
+  }
 
   const items = [
     {
@@ -81,6 +116,83 @@ const Header = () => {
       title: 'title heading text',
       link: '/',
     },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://nextjs.org/&size=24',
+      text: 'Next js',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://angular.dev/&size=24',
+      text: 'Angular js',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://nodejs.org/&size=24',
+      text: 'Node js',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://expressjs.com/&size=24',
+      text: 'express js',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://github.com/&size=24',
+      text: 'Github',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.mongodb.com/&size=24',
+      text: 'mongoDB',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://vuejs.org/&size=24',
+      text: 'vue js',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://code.visualstudio.com/&size=24',
+      text: 'visualstudio',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.mongodb.com/&size=24',
+      text: 'mongoDB',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://vuejs.org/&size=24',
+      text: 'vue js',
+      title: 'title heading text',
+      link: '/',
+    },
+    {
+      imageUrl:
+        'https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://code.visualstudio.com/&size=24',
+      text: 'visualstudio',
+      title: 'title heading text',
+      link: '/',
+    },
 
     // Add more items here
   ]
@@ -98,94 +210,128 @@ const Header = () => {
     }
   }, [])
 
- 
   const handleThemeChange = (newTheme: 'light' | 'dark' | 'system') => {
-    setTheme(newTheme);
-    document.documentElement.classList.remove('light', 'dark');
-  
+    setTheme(newTheme)
+    document.documentElement.classList.remove('light', 'dark')
+
     if (newTheme === 'system') {
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      document.documentElement.classList.add(systemTheme);
-      localStorage.removeItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      document.documentElement.classList.add(systemTheme)
+      localStorage.removeItem('theme')
     } else {
-      document.documentElement.classList.add(newTheme);
-      localStorage.setItem('theme', newTheme);
+      document.documentElement.classList.add(newTheme)
+      localStorage.setItem('theme', newTheme)
     }
-  };
+  }
+  const router = useRouter();
+  const isHomePage = router.pathname === '/home';
 
   return (
     <>
-      <header className="block bg-white py-[10px] dark:bg-black border-b border-slate-200 fixed md:static left-0 right-0 top-0 z-[300] md:border-none">
-        <div className="container mx-auto px-[15px]">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-[80px]">
-            <div className="flex-shrink-0 flex justify-between md:justify-start">
-              <h2 className="text-slate-500">LOGO HERE</h2>
-              <button type="button"  onClick={toggleClass} className='block md:hidden text-black dark:text-white'><IconMenu stroke={2} /></button>
+      <header className=
+      
+      {`${
+        isSticky ? 'fixed  shadow' : 'md:static'
+      } transition-all duration-300 left-0 right-0 top-0 z-[300] block border-b border-slate-200 bg-white py-[10px] dark:bg-[#000]  md:border-none`}>
+        <div
+          className={`absolute left-0 top-[80px] z-[331] w-[330px] bg-white py-[15px] shadow group-hover:block dark:bg-[#000] md:right-0 md:top-[50px] md:w-full ${isActive ? 'block' : 'hidden'}`}
+        >
+          <div className="mx-auto max-w-[1228px] px-[15px]">
+            <div className="grid grid-cols-1 gap-[15px] md:grid-cols-5">
+              <DropLinks items={items} />
             </div>
-            <div className={`flex-grow-1 flex md:w-full md:items-center md:justify-between flex-col md:flex-row gap-[15px] md:gap-0 fixed md:static bg-white dark:bg-black top-[45px] left-0 bottom-0 z-[100]  shadow md:shadow-transparent md:p-0 md:opacity-100 md:translate-x-[0px] ${
-              isToggled ? ' w-[340px] p-[15px]  translate-x-[0px] opacity-100 ease-linear transition duration-150' : 'w-0  -translate-x-[100px] opacity-0 '
-            }`}
+          </div>
+        </div>
+        <div className="mx-auto max-w-[1228px] px-[15px]">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-[80px]">
+            <div className="flex flex-shrink-0 justify-between md:justify-start">
+              <Link href="/home" className="inline-block w-[100px]">
+                <Image src={logo} alt="logo" className="w-full" />
+              </Link>
+
+              <button type="button" onClick={toggleClass} className="block text-[#000] dark:text-white md:hidden">
+                <IconMenu stroke={2} />
+              </button>
+            </div>
+            <div
+              className={`flex-grow-1 fixed bottom-0 left-0 top-[45px] z-[100] flex flex-col gap-[15px] bg-white shadow dark:bg-[#000] md:static md:w-full md:translate-x-[0px] md:flex-row md:items-center md:justify-between md:gap-0 md:p-0 md:opacity-100 md:shadow-transparent ${
+                isToggled
+                  ? 'w-[340px] translate-x-[0px] p-[15px] opacity-100 transition duration-150 ease-linear'
+                  : 'w-0 -translate-x-[100px] opacity-0'
+              }`}
             >
               <div className="group">
-                <Link href="/" className="flex items-center text-[14px] gap-2 text-black dark:text-white">
+                <button
+                  type="button"
+                  onClick={toggleClass1}
+                  className="flex items-center gap-2 text-[14px] text-[#000] dark:text-white"
+                >
                   {' '}
                   <span>Categories</span> <IoMdArrowDropdown />
-                </Link>
-                <div className="absolute left-0 right-0 z-[10] hidden bg-white py-[15px] shadow group-hover:block dark:bg-black">
-                  <div className="container mx-auto px-[15px]">
-                    <div className="grid grid-cols-1 md:grid-cols-5 gap-[15px]">
-                      <DropLinks items={items} />
+                </button>
+              </div>
+              {!isHomePage && (
+              <div className="mx-auto hidden w-[400px] md:block">
+                <form action="">
+                  <div className="flex items-center rounded-lg bg-[#F2F2F2]">
+                    <div className="flex-grow">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="search something"
+                        className="w-full bg-transparent px-[20px] py-[6px] text-[14px] text-[#000] focus-visible:outline-0"
+                      />
+                    </div>
+                    <div className="flex-shrink-0">
+                      <button type="submit" className="bg-transparent p-[6px] text-[#000]">
+                        <IconSearch stroke={1} className="w-[20px]" />
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+ )}
+              <div className="mt-auto flex flex-col gap-5 md:mt-0 md:flex-row md:items-center">
+                {/* drop color light dark */}
+                <div className="">
+                  <button type="button" onClick={toggleClass2}>
+                    <IconDeviceImac stroke={2} className="w-[20px] text-[#000] dark:text-white" />
+                  </button>
+                  <div
+                    className={`absolute right-0 top-[40px] z-[33] min-w-[100px] rounded-lg border border-slate-200 bg-white p-[10px] shadow dark:bg-[#000] ${isActive2 ? 'block' : 'hidden'}`}
+                  >
+                    <div className="flex flex-col justify-center gap-[2px] md:justify-end">
+                      <button
+                        className={`flex items-center gap-2 rounded-md p-2 ${theme === 'light' ? 'bg-gray-300' : ''}`}
+                        onClick={() => handleThemeChange('light')}
+                      >
+                        <IconSun stroke={2} className="w-[20px] text-[#000] dark:text-white" />
+                        <span className="text-[14px] text-[#000] dark:text-white">Light</span>
+                      </button>
+                      <button
+                        className={`flex items-center gap-2 rounded-md p-2 ${theme === 'dark' ? 'bg-gray-800 text-white' : ''}`}
+                        onClick={() => handleThemeChange('dark')}
+                      >
+                        <IconMoon stroke={2} className="w-[20px] text-[#000] dark:text-white" />
+                        <span className="text-[14px] text-[#000] dark:text-white">dark</span>
+                      </button>
+                      <button
+                        className={`flex items-center gap-2 rounded-md p-2 ${theme === 'system' ? 'bg-gray-400' : ''}`}
+                        onClick={() => handleThemeChange('system')}
+                      >
+                        <IconDeviceImac stroke={2} className="w-[20px] text-[#000] dark:text-white" />
+                        <span className="text-[14px] text-[#000] dark:text-white">System</span>
+                      </button>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex flex-col md:flex-row md:items-center gap-[15px] md:gap-[35px]">
-                <Link href="/" className="text-[14px] text-black dark:text-white">
-                  Home
-                </Link>
-                <Link href="/" className="text-[14px] text-black dark:text-white">
-                  About
-                </Link>
-                <Link href="/" className="text-[14px] text-black dark:text-white">
-                  Products
-                </Link>
-                <Link href="/" className="text-[14px] text-black dark:text-white">
-                  Contact
-                </Link>
-              </div>
-              <div className="flex flex-col md:flex-row md:items-center gap-2 mt-auto md:mt-0">
                 <Link
                   href="/"
-                  className="inline-block rounded-lg bg-black px-[30px] py-[10px] text-[14px] text-white hover:bg-[#222] dark:bg-white dark:text-black dark:hover:bg-[#cfcfcf] text-center"
+                  className="rounded-md border border-[#e6e6e6] bg-white px-[15px] py-[6px] text-[14px] text-[#000] hover:bg-[#f9f9f9] text-center"
                 >
                   Login
                 </Link>
-                <Link
-                  href="/"
-                  className="inline-block rounded-lg bg-black px-[30px] py-[10px] text-[14px] text-white hover:bg-[#222] dark:bg-white dark:text-black dark:hover:bg-[#cfcfcf] text-center"
-                >
-                  Buy Now
-                </Link>
-                <div className="flex justify-center md:justify-end gap-[10px]">
-                  <button
-                    className={`p-2 ${theme === 'light' ? 'bg-gray-300' : ''}`}
-                    onClick={() => handleThemeChange('light')}
-                  >
-                    <IconSun stroke={2} className="w-[20px] text-black dark:text-white" />
-                  </button>
-                  <button
-                    className={`p-2 ${theme === 'dark' ? 'bg-gray-800 text-white' : ''}`}
-                    onClick={() => handleThemeChange('dark')}
-                  >
-                    <IconMoon stroke={2} className="w-[20px] text-black dark:text-white" />
-                  </button>
-                  <button
-                    className={`p-2 ${theme === 'system' ? 'bg-gray-400' : ''}`}
-                    onClick={() => handleThemeChange('system')}
-                  >
-                    <IconDeviceImac stroke={2} className="w-[20px] text-black dark:text-white" />
-                  </button>
-                </div>
               </div>
             </div>
           </div>

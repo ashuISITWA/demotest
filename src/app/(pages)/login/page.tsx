@@ -26,7 +26,7 @@ export default function Page() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Switch name="allow_embedding" defaultChecked />
-                  <p className="text-[14px] text-black">Remember me</p>
+                  <p className="text-[14px] text-[#000]">Remember me</p>
                 </div>
                 <div>
                   <Link
@@ -37,13 +37,13 @@ export default function Page() {
                   </Link>
                 </div>
               </div>
-              <button type="submit" className="rounded-md bg-black px-[20px] py-[10px] text-white text-[14px]">
+              <button type="submit" className="rounded-md bg-[#000] px-[20px] py-[10px] text-white text-[14px]">
                 Log in
               </button>
-              <button type="submit" className="rounded-md bg-black px-[20px] py-[10px] text-white text-[14px]">
+              <button type="submit" className="rounded-md bg-[#000] px-[20px] py-[10px] text-white text-[14px]">
                 Sign in with Google
               </button>
-              <p className="text-[14px] text-slate-500">Don't have an account? <Link href="/" className="text-black">Sign up </Link>
+              <p className="text-[14px] text-slate-500">Don't have an account? <Link href="/" className="text-[#000]">Sign up </Link>
               </p>
             </div>
           </form>

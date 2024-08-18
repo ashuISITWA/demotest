@@ -20,7 +20,7 @@ export default function Settings() {
     <form method="post" className="mx-auto max-w-4xl">
       <div className="flex justify-between items-center">
         <Heading>Settings</Heading>
-        <Link href="/team" className='bg-black text-white text-[14px] rounded-md py-[10px] px-[20px]'
+        <Link href="/team" className='bg-[#000] text-white text-[14px] rounded-md py-[10px] px-[20px]'
         >Team Members</Link>
       </div>
       

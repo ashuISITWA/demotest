@@ -50,7 +50,7 @@ export default async function Event({ params }: { params: { id: string } }) {
           </div>
         </div>
         <div className="flex gap-4">
-          <Link href="/gitaccess" className="bg-white py-[6px] px-[15px] text-black text-[14px] rounded-md flex gap-2 items-center border border-[#e6e6e6] hover:bg-[#f9f9f9]">
+          <Link href="/gitaccess" className="bg-white py-[6px] px-[15px] text-[#000] text-[14px] rounded-md flex gap-2 items-center border border-[#e6e6e6] hover:bg-[#f9f9f9]">
             <IconBrandGithub className='w-[15px]' />Git Access
           </Link>
           <Button>View</Button>

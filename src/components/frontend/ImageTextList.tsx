@@ -20,7 +20,7 @@ const ImageTextList: React.FC<ImageTextListProps> = ({ imgitems }) => {
             <img src={item.imageUrl} alt={item.text} />
           </div>
           <div className="flex-grow-1">
-            <h5 className="text-[14px] text-black dark:text-white">{item.text}</h5>
+            <h5 className="text-[14px] text-[#000] dark:text-white">{item.text}</h5>
           </div>
         </div>
       ))}

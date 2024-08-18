@@ -40,7 +40,7 @@ export default async function Events() {
 
         <Link
           href="/addproduct"
-          className="rounded-md bg-black px-[20px] py-[8px] text-[14px] text-white hover:bg-[#222]"
+          className="rounded-md bg-[#000] px-[20px] py-[8px] text-[14px] text-white hover:bg-[#222]"
         >
           Add Product
         </Link>

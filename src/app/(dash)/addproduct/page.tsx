@@ -48,7 +48,7 @@ export default function Page() {
                 <div className="grid grid-cols-12 gap-[15px]">
                   <div className="col-span-12 md:col-span-8">
                     <Field className="flex flex-col gap-[10px]">
-                      <Label className="font-medium text-black">Product name</Label>
+                      <Label className="font-medium text-[#000]">Product name</Label>
                       <div className="d-block">
                         <Input name="productName" placeholder="Name of the product" type="text" />
                       </div>
@@ -56,37 +56,38 @@ export default function Page() {
                   </div>
                   <div className="col-span-12 md:col-span-4">
                     <Field className="flex flex-col gap-[10px]">
-                      <Label className="font-medium text-black">Price</Label>
+                      <Label className="font-medium text-[#000]">Price</Label>
                       <div className="flex items-center gap-[15px]">
                         <div className="flex-grow">
                           <Input name="price" placeholder="" type="number" />
                         </div>
                         <div className="flex-shrink-0">
-                          <h6 className="text-[16px] font-medium text-black">USD</h6>
+                          <h6 className="text-[16px] font-medium text-[#000]">USD</h6>
                         </div>
                       </div>
                     </Field>
                   </div>
                 </div>
                 <Field className="flex flex-col gap-[10px] max-w-[527px]">
-                  <Label className="font-medium text-black">Content</Label>
+                  <Label className="font-medium text-[#000]">Content</Label>
                   <div className="d-block">
                     <Input name="search" placeholder="Search for a repo" type="text" />
                   </div>
                 </Field>
                 <div className="block">
                   <div className="relative inline-block overflow-hidden w-[210px]">
-                    <h4 className="rounded-md bg-[#e4e4e4] text-[14px] font-medium capitalize text-black py-[10px] px-[15px] text-center w-[210px]">
+                    <h4 className="rounded-md bg-[#e4e4e4] text-[14px] font-medium capitalize text-[#000] py-[10px] px-[15px] text-center w-[210px]">
                       upload file instead
                     </h4>
                     <input type="file" name="fileUpload" id="fileUpload" className="absolute top-0 left-0 opacity-0 cursor-pointer z-[4] py-[10px] w-[210px]" />
                   </div>
                 </div>
                 <div className="block">
+                <img className='w-full' src="https://imgtr.ee/images/2024/08/17/1cd3418213361409a0016382abd80e1b.jpeg" alt="image" />
                   <div ref={editorRef} className="ql-container ql-snow" />
                 </div>
                 <div className="block">
-                  <button type="submit" className="text-white text-[16px] py-[8px] px-[30px] rounded-md bg-black">
+                  <button type="submit" className="text-white text-[16px] py-[8px] px-[30px] rounded-md bg-[#000]">
                     Create Product
                   </button>
                 </div>

@@ -20,30 +20,30 @@ export default function Page() {
                   <Input name="productName" placeholder="GitHub username" type="text" />
                 </div>
                 <div className="flex-shrink-0">
-                  <button type="submit" className="rounded-md bg-black px-[30px] py-[6px] text-[16px] text-white">
+                  <button type="submit" className="rounded-md bg-[#000] px-[30px] py-[6px] text-[16px] text-white">
                     Invite
                   </button>
                 </div>
               </div>
             </form>
             <div className="flex flex-col gap-[15px] border-t border-slate-200 pt-[20px]">
-              <h3 className="text-[16px] font-medium text-black">Problems getting an invite?</h3>
+              <h3 className="text-[16px] font-medium text-[#000]">Problems getting an invite?</h3>
               <div className="flex gap-1">
                 <div className="flex-shrink-0">
-                  <IconPointFilled className="text-slate-400" />
+                  <IconPointFilled className="text-[#5b5e61]" />
                 </div>
                 <div className="flex-grow">
-                  <p className="text-[14px] text-black">
+                  <p className="text-[14px] text-[#000]">
                     Make sure there are no spaces at the beginning or end of your username.
                   </p>
                 </div>
               </div>
               <div className="flex gap-1">
                 <div className="flex-shrink-0">
-                  <IconPointFilled className="text-slate-400" />
+                  <IconPointFilled className="text-[#5b5e61]" />
                 </div>
                 <div className="flex-grow">
-                  <p className="text-[14px] text-black">Enter only your GitHub username, not email.</p>
+                  <p className="text-[14px] text-[#000]">Enter only your GitHub username, not email.</p>
                 </div>
               </div>
             </div>

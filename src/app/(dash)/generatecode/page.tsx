@@ -57,7 +57,7 @@ export default function Page() {
                 </Button>
                 <Button
                   onClick={() => setIsOpen(true)}
-                  className="flex cursor-pointer items-center gap-2 rounded-md border border-[#111] bg-black px-[15px] py-[6px] text-[14px] text-white hover:bg-[#222]"
+                  className="flex cursor-pointer items-center gap-2 rounded-md border border-[#111] bg-[#000] px-[15px] py-[6px] text-[14px] text-white hover:bg-[#222]"
                 >
                   Generate Code
                 </Button>
@@ -97,10 +97,17 @@ export default function Page() {
       <Dialog open={isOpen} onClose={setIsOpen}>
         <DialogTitle>Generate Code</DialogTitle>
         <DialogBody>
-          <Field>
-            <Label>Product Name</Label>
-            <Input name="amount" type="text" placeholder="No of codes" />
+          <div className="flex flex-col gap-3">
+             <Field>
+            <Label>Group Name</Label>
+            <Input name="amount" type="text" placeholder="type here..." />
           </Field>
+          <Field>
+            <Label>No of Codes</Label>
+            <Input name="amount" type="text" placeholder="type here..." />
+          </Field>
+          </div>
+         
         </DialogBody>
         <DialogActions>
           <Button className="cursor-pointer" plain onClick={() => setIsOpen(false)}>
@@ -115,6 +122,7 @@ export default function Page() {
         <Text>The refund will be reflected in the customer’s bank account 2 to 3 business days after processing.</Text>
         <DialogBody>
           <div className="flex flex-col gap-3">
+          
             <Field>
               <Label>Code</Label>
               <Textarea name="" id="" rows={5}></Textarea>

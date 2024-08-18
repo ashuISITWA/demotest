@@ -50,10 +50,10 @@ export default async function Event({ params }: { params: { id: string } }) {
           </div>
         </div>
         <div className="flex gap-4">
-        <Link href="/generatecode" className="bg-white py-[6px] px-[15px] text-black text-[14px] rounded-md flex gap-2 items-center border border-[#e6e6e6] hover:bg-[#f9f9f9]"><IconCurrencyDollar className='w-[15px]' />Promo Code</Link>
-        <Link href="" className="bg-white py-[6px] px-[15px] text-black text-[14px] rounded-md flex gap-2 items-center border border-[#e6e6e6] hover:bg-[#f9f9f9]">Edit</Link>
+        <Link href="/generatecode" className="bg-white py-[6px] px-[15px] text-[#000] text-[14px] rounded-md flex gap-2 items-center border border-[#e6e6e6] hover:bg-[#f9f9f9]"><IconCurrencyDollar className='w-[15px]' />Promo Code</Link>
+        <Link href="" className="bg-white py-[6px] px-[15px] text-[#000] text-[14px] rounded-md flex gap-2 items-center border border-[#e6e6e6] hover:bg-[#f9f9f9]">Edit</Link>
           {/* <Button outline>Edit</Button> */}
-          <Button>View</Button>
+          <Link href="/publicproduct" className="bg-[#000] py-[6px] px-[15px] text-white text-[14px] rounded-md flex gap-2 items-center border border-[#111] hover:bg-[#111]">View</Link>
         </div>
       </div>
       <div className="mt-8 grid gap-8 sm:grid-cols-3">

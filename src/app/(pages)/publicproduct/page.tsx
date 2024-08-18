@@ -139,41 +139,42 @@ const Page = () => {
 
     // Add more items here
   ]
+
   return (
     <>
       <Header />
 
-      <section className="block bg-white py-[100px] dark:bg-black">
-        <div className="container mx-auto px-[15px]">
-          <div className="flex flex-col gap-[30px]">
-            <Link href="/" className="flex items-center gap-1 text-[16px] text-black dark:text-white">
-              <FiArrowLeft /> <span>Back</span>{' '}
-            </Link>
-
-            <div className="mx-auto block w-full md:w-[800px]">
+      <section className="block bg-white py-[100px] dark:bg-[#000]">
+        <div className="mx-auto max-w-[1228px] px-[15px]">
+          <Link href="/" className="flex items-center gap-1 text-[14px] text-[#000] dark:text-white">
+            <FiArrowLeft /> <span>Back</span>{' '}
+          </Link>
+          <div className="flex flex-col gap-[30px]  -mt-[20px]">
+            <div className="mx-auto block w-full md:w-[604px]">
               <div className="flex flex-col gap-[25px]">
                 <div>
-                  <h5 className="float-start rounded-full bg-slate-300 px-[6px] py-[2px] text-[14px] text-black dark:text-white">
+                  <h5 className="float-start rounded-full bg-slate-300 px-[6px] py-[4px] text-[12px] text-[#000] dark:text-white">
                     Featured
                   </h5>
                 </div>
                 <div className="block">
-                  <h1 className="text-[30px] font-semibold leading-[34px] text-black dark:text-white">
-                    Main heading title Consequat consequat ex enim dolore commodo minim .
+                  <h1 className="text-[30px] font-semibold leading-[34px] text-[#000] dark:text-white">
+                  Effortless Collaboration: Work seamlessly with your team in real-time, from anywhere.
                   </h1>
                 </div>
-                <div className="block h-[400px]">
+                <div className="block h-[400px] rounded-md overflow-hidden">
                   <Image src={image} alt="image" className="h-full w-full object-cover" />
                 </div>
-                <div className="flex items-center justify-between">
-                  <h3 className="text-[18px] font-semibold text-black dark:text-white">Price</h3>
-                  <h3 className="text-[18px] font-semibold text-black dark:text-white">
+                <div className="flex flex-col divide-y divide-slate-300">
+                <div className="flex items-center justify-between py-[15px]">
+                  <h3 className="text-[14px] font-semibold text-[#000] dark:text-white">Price</h3>
+                  <h3 className="text-[14px] font-semibold text-[#000] dark:text-white">
                     $79.99 <span className="font-normal italic line-through">100.99</span>
                   </h3>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <h3 className="text-[18px] font-semibold text-black dark:text-white">Developer</h3>
+                <div className="flex items-center justify-between py-[15px]">
+                  <h3 className="text-[14px] font-semibold text-[#000] dark:text-white">Developer</h3>
                   <div className="flex items-center gap-[15px]">
                     <div className="flex-shrink-0">
                       <Image
@@ -183,50 +184,35 @@ const Page = () => {
                       />
                     </div>
                     <div className="flex-grow-1">
-                      <p className="text-[14px] italic leading-[20px] text-black dark:text-white">by Rohit</p>
+                      <p className="text-[14px] italic leading-[20px] text-[#000] dark:text-white">by Rohit</p>
                     </div>
                   </div>
                 </div>
-                <div className="flex gap-3 justify-end">
-                  <Link href="/" className="rounded-lg bg-black px-[30px] py-[8px] text-white text-[14px]">
-                  Preview
+                <div className="flex justify-end gap-3 py-[15px]">
+                  <Link href="/" className="rounded-lg bg-[#000] px-[30px] py-[6px] text-[13px] text-white">
+                    Preview
                   </Link>
-                  <Link href="/confirmpayment" className="rounded-lg bg-black px-[30px] py-[8px] text-white text-[14px]">
+                  <Link href="/payments" className="rounded-lg bg-[#000] px-[30px] py-[6px] text-[13px] text-white">
                     Buy Now
                   </Link>
                 </div>
-                <div className="flex flex-col gap-[15px]">
-                  <h3 className="text-[18px] font-semibold text-black dark:text-white">Tech Stack</h3>
+                <div className="flex flex-col gap-[15px] py-[15px]">
+                  <h3 className="text-[14px] font-semibold text-[#000] dark:text-white">Tech Stack</h3>
                   <div className="flex flex-wrap items-center gap-[15px]">
                     <ImageTextList imgitems={imgitems} />
                   </div>
                 </div>
+                </div>
                 <div className="flex flex-col gap-[15px]">
-                  <h3 className="text-[18px] font-semibold text-black dark:text-white">About this</h3>
-                  <p className="text-[16px] text-black dark:text-white">
-                    Commodo sint Lorem duis qui. Est enim laboris Lorem ad. Laboris quis cillum excepteur sit. Mollit
-                    laboris ullamco amet occaecat ut minim cupidatat tempor eiusmod tempor aute id. Laboris nisi sint
-                    magna consectetur duis fugiat deserunt occaecat non cupidatat magna amet adipisicing incididunt.
-                    Occaecat ad ad dolore ipsum proident adipisicing laborum laborum qui excepteur velit. Amet excepteur
-                    elit dolor aute ut proident adipisicing exercitation aute Lorem anim culpa pariatur est. Amet elit
-                    sint elit nulla commodo anim cillum reprehenderit anim.
+                  <h3 className="text-[14px] font-semibold text-[#000] dark:text-white">About this</h3>
+                  <p className="text-[14px] text-[#000] dark:text-white">
+                  Collaboration is key in the modern workspace, and Product Name makes it easier than ever to work with your team. With real-time collaboration features, multiple users can work on the same project simultaneously, ensuring that everyone stays on the same page. You can leave comments, track changes, and manage projects efficiently—all within a single platform. No more juggling between different tools or worrying about version control; everything you need is right at your fingertips.
                   </p>
-                  <p className="text-[16px] text-black dark:text-white">
-                    Dolore incididunt consectetur nulla incididunt id. Laboris proident tempor minim ex et ipsum
-                    nostrud. Nisi eu aliquip irure ipsum non voluptate est id proident dolor occaecat. Proident non sit
-                    do aliqua culpa reprehenderit. Elit officia ea enim elit exercitation cupidatat Lorem ex laboris
-                    laboris dolor exercitation pariatur mollit. Culpa qui quis Lorem dolor irure est eiusmod velit sint
-                    ut. Dolore ex aliquip aute exercitation sit reprehenderit ea ea labore amet consectetur tempor.
-                    Fugiat elit reprehenderit exercitation proident dolore velit cupidatat. Eiusmod proident culpa qui
-                    reprehenderit cupidatat ut. Ad qui veniam fugiat in aliqua deserunt consequat consectetur ad.
+                  <p className="text-[14px] text-[#000] dark:text-white">
+                  Security and accessibility are at the heart of Product Name. Your projects are securely stored in the cloud, allowing you to access them from any device, anytime. Whether you're working from your office, home, or on the go, you can pick up right where you left off. And with our cross-platform compatibility, you can easily switch between your computer, tablet, or smartphone without missing a beat. Your creativity doesn't have to be tied to one location.
                   </p>
-                  <p className="text-[16px] text-black dark:text-white">
-                    Exercitation qui commodo consequat fugiat occaecat non fugiat nostrud ipsum. Quis ut est deserunt
-                    tempor nulla ipsum ad. Dolore ullamco ad consectetur laboris. Est ullamco eu pariatur excepteur
-                    reprehenderit nostrud. Do excepteur et dolor commodo veniam nostrud ut sit incididunt commodo.
-                    Tempor incididunt reprehenderit officia ut anim cupidatat eu adipisicing laboris mollit aute cillum.
-                    Deserunt irure pariatur dolor nostrud dolore aliqua reprehenderit irure cillum voluptate ad culpa
-                    qui cillum. Tempor amet proident minim eu irure adipisicing duis eiusmod veniam enim est voluptate.
+                  <p className="text-[14px] text-[#000] dark:text-white">
+                  At Product Name, we believe in providing continuous value to our users. That's why we're committed to regular updates, bringing you the latest features and improvements based on your feedback. Our user-friendly interface, combined with customizable templates and tools, ensures that you can create professional-quality work in no time. Plus, with affordable pricing plans and 24/7 customer support, you can be confident that Product Name will meet your needs, no matter where your creative journey takes you.
                   </p>
                 </div>
               </div>
@@ -234,10 +220,10 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <section className="block bg-white py-[100px] dark:bg-black">
-        <div className="container mx-auto px-[15px]">
+      <section className="block bg-white py-[100px] dark:bg-[#000]">
+        <div className="mx-auto max-w-[1228px] px-[15px]">
           <div className="flex flex-col gap-[30px]">
-            <h3 className="text-[20px] font-semibold text-black dark:text-white">Related Products</h3>
+            <h3 className="text-[20px] font-semibold text-[#000] dark:text-white">Related Products</h3>
             <div className="grid grid-cols-1 gap-[30px] md:grid-cols-4">
               <ProductBlock items={items} />
             </div>

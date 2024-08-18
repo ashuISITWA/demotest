@@ -18,7 +18,7 @@ export default function Page() {
             <div className="flex flex-col gap-[20px]">
               <div className="flex justify-center">
                 <div className="flex flex-col gap-4 text-center">
-                  <h3 className="text-[20px] font-bold text-black md:text-[32px]">Billing</h3>
+                  <h3 className="text-[20px] font-bold text-[#000] md:text-[32px]">Billing</h3>
                   <h3 className="text-[16px] font-normal text-[#999]">Here are your sites</h3>
                 </div>
               </div>
@@ -52,7 +52,7 @@ export default function Page() {
                           <div className="mb-[20px] mt-[50px] block">
                             <button
                               type="button"
-                              className="w-full rounded-md bg-black py-[10px] text-[14px] text-[#fff]"
+                              className="w-full rounded-md bg-[#000] py-[10px] text-[14px] text-[#fff]"
                             >
                               Upgrad
                             </button>
@@ -89,7 +89,7 @@ export default function Page() {
                       <div className="flex flex-col gap-[35px] rounded-md border border-[#eee] p-[15px]">
                         <h3 className="text-[16px] text-[#222]">Pro yearly (pack 25 users)</h3>
                         <div className="relative flex flex-col gap-3 text-center">
-                          <h2 className="absolute -top-[28px] left-0 z-[10] rounded-md border border-[#eee] bg-white px-[6px] py-[4px] text-[11px] text-black">
+                          <h2 className="absolute -top-[28px] left-0 z-[10] rounded-md border border-[#eee] bg-white px-[6px] py-[4px] text-[11px] text-[#000]">
                             Most Popular
                           </h2>
                           <div className="flex flex-col">
@@ -104,7 +104,7 @@ export default function Page() {
                           <div className="mb-[20px] mt-[50px] block">
                             <button
                               type="button"
-                              className="w-full rounded-md bg-black py-[10px] text-[14px] text-[#fff]"
+                              className="w-full rounded-md bg-[#000] py-[10px] text-[14px] text-[#fff]"
                             >
                               Upgrad
                             </button>
@@ -153,7 +153,7 @@ export default function Page() {
                           <div className="mb-[20px] mt-[50px] block">
                             <button
                               type="button"
-                              className="w-full rounded-md bg-black py-[10px] text-[14px] text-[#fff]"
+                              className="w-full rounded-md bg-[#000] py-[10px] text-[14px] text-[#fff]"
                             >
                               Contact Us
                             </button>

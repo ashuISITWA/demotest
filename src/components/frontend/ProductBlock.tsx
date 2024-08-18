@@ -24,22 +24,22 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ items }) => {
     <>
       {items.map((item, index) => (
         <div className="col-span-1" key={index}>
-          <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900">
+          <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
             <div className="block h-[200px]">
               <img src={item.imageUrl} alt={item.title} className="inline-block h-full w-full object-cover" />
             </div>
             <div className="flex flex-col gap-[10px] p-[15px]">
               <Link href="/">
                 <div>
-                  <h6 className="float-start rounded-full bg-slate-300 px-[6px] text-[12px] text-black">{item.tag}</h6>
+                  <h6 className="float-start rounded-full bg-slate-300 px-[6px] text-[12px] text-[#000]">{item.tag}</h6>
                 </div>
               </Link>
               <Link href="/">
-                <div className="text-[18px] font-semibold leading-[20px] text-black dark:text-white">
+                <div className="text-[18px] font-semibold leading-[20px] text-[#000] dark:text-white">
                   {item.title}
                 </div>
               </Link>
-              <p className="text-[14px] leading-[20px] text-slate-400 line-clamp-2">{item.des}</p>
+              <p className="text-[14px] leading-[20px] text-[#5b5e61] line-clamp-2">{item.des}</p>
               <Link href="/">
                 <div className="flex items-center gap-[15px]">
                   <div className="flex-shrink-0">
@@ -50,7 +50,7 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ items }) => {
                     />
                   </div>
                   <div className="flex-grow-1">
-                    <p className="text-[14px] italic leading-[20px] text-black dark:text-white">by {item.pername}</p>
+                    <p className="text-[14px] italic leading-[20px] text-[#000] dark:text-white">by {item.pername}</p>
                   </div>
                 </div>
               </Link>
@@ -65,14 +65,14 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ items }) => {
                   </div>
                 </div>
                 <div className="flex-grow-12">
-                  <p className="text-[14px] leading-[20px] text-black dark:text-white">{item.reviews}</p>
+                  <p className="text-[14px] leading-[20px] text-[#000] dark:text-white">{item.reviews}</p>
                 </div>
               </div>
-              <h6 className="text-[16px] font-semibold text-black dark:text-white">
+              <h6 className="text-[16px] font-semibold text-[#000] dark:text-white">
                 ${item.price} <span className="font-normal italic line-through">${item.totalprice}</span>
               </h6>
               <Link href="/">
-                <div className="inline-block rounded-lg bg-black py-[8px] text-center text-white hover:bg-[#222] dark:bg-white dark:text-black dark:hover:bg-[#cfcfcf]">
+                <div className="block rounded-lg bg-[#000] py-[8px] text-center text-white hover:bg-[#222] dark:bg-white dark:text-[#000] dark:hover:bg-[#cfcfcf]">
                   Buy Now
                 </div>
               </Link>

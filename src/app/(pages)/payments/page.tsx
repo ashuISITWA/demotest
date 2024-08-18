@@ -16,16 +16,16 @@ export default function Page() {
   return (
     <>
       <Header />
-      <section className="block bg-white py-[150px] dark:bg-black md:h-[64vh]">
-        <div className="container mx-auto px-[15px]">
+      <section className="block bg-white py-[150px] dark:bg-[#000] md:h-[64vh]">
+        <div className="max-w-[1228px] mx-auto px-[15px]">
           <div className="grid grid-cols-12 gap-[30px]">
             <div className="col-span-12 md:col-span-5">
               <div className="flex flex-col gap-[15px]">
-                <h2 className="text-[30px] font-semibold leading-[30px] text-black dark:text-white">
+                <h2 className="text-[30px] font-semibold leading-[30px] text-[#000] dark:text-white">
                   Astro Starter Kitu LaunchFast
                 </h2>
-                <h3 className="text-[22px] leading-[26px] text-slate-400">$75.00</h3>
-                <p className="text-[16px] leading-[24px] text-black dark:text-white">
+                <h3 className="text-[22px] leading-[26px] text-[#5b5e61]">$75.00</h3>
+                <p className="text-[16px] leading-[24px] text-[#000] dark:text-white">
                   High Quality Astro Starter Kit with built-in authentication flow, image uploads, analytics, payments,
                   email flows, and much more. Compatible with any Redis and Postgres database.
                 </p>
@@ -38,8 +38,8 @@ export default function Page() {
                   <div
                     className={`rounded-lg px-4 py-2 text-[16px] ${
                       activeTab === 'tab1'
-                        ? 'bg-black text-white dark:bg-white dark:text-black'
-                        : 'bg-transparent text-black dark:text-white'
+                        ? 'bg-[#000] text-white dark:bg-white dark:text-[#000]'
+                        : 'bg-transparent text-[#000] dark:text-white'
                     }`}
                     onClick={handleTab1}
                   >
@@ -48,8 +48,8 @@ export default function Page() {
                   <div
                     className={`ml-2 rounded-lg px-4 py-2 text-[16px] ${
                       activeTab === 'tab2'
-                        ? 'bg-black text-white dark:bg-white dark:text-black'
-                        : 'bg-transparent text-black dark:text-white'
+                        ? 'bg-[#000] text-white dark:bg-white dark:text-[#000]'
+                        : 'bg-transparent text-[#000] dark:text-white'
                     }`}
                     onClick={handleTab2}
                   >
@@ -61,18 +61,18 @@ export default function Page() {
                     <div className="mt-4 block">
                       <form action="">
                         <div className="flex flex-col gap-[25px]">
-                          <label htmlFor="" className="text-[16px] font-medium text-black dark:text-white">
+                          <label htmlFor="" className="text-[16px] font-medium text-[#000] dark:text-white">
                             Code Link
                           </label>
                           <input
                             type="text"
                             placeholder="type here..."
-                            className="rounded-lg border border-slate-200 px-[20px] py-[10px] text-[16px] text-black focus-visible:outline-none"
+                            className="rounded-lg border border-slate-200 px-[20px] py-[10px] text-[16px] text-[#000] focus-visible:outline-none"
                           />
                           <div className="flex justify-end">
                           <button
                             type="submit"
-                            className="rounded-lg bg-black px-[20px] py-[10px] text-white hover:bg-slate-800 dark:hover:bg-slate-400 dark:bg-white dark:text-black"
+                            className="rounded-lg bg-[#000] px-[20px] py-[10px] text-white hover:bg-slate-800 dark:hover:bg-slate-400 dark:bg-white dark:text-[#000]"
                           >
                             Pay Now
                           </button>
@@ -85,31 +85,31 @@ export default function Page() {
                     <div className="mt-4 block">
                       <form action="">
                         <div className="flex flex-col gap-[25px]">
-                          <label htmlFor="" className="text-[16px] font-medium text-black dark:text-white">
+                          <label htmlFor="" className="text-[16px] font-medium text-[#000] dark:text-white">
                             Label
                           </label>
                           <div className="grid grid-cols-1 md:grid-cols-4 gap-[10px]">
                             <button
                               type="button"
-                              className="rounded-lg border border-slate-200 px-[20px] py-[50px] text-[16px] text-black focus-visible:outline-none dark:text-white"
+                              className="rounded-lg border border-slate-200 px-[20px] py-[50px] text-[16px] text-[#000] focus-visible:outline-none dark:text-white"
                             >
                               Link
                             </button>
                             <button
                               type="button"
-                              className="rounded-lg border border-slate-200 px-[20px] py-[50px] text-[16px] text-black focus-visible:outline-none dark:text-white"
+                              className="rounded-lg border border-slate-200 px-[20px] py-[50px] text-[16px] text-[#000] focus-visible:outline-none dark:text-white"
                             >
                               Link
                             </button>
                             <button
                               type="button"
-                              className="rounded-lg border border-slate-200 px-[20px] py-[50px] text-[16px] text-black focus-visible:outline-none dark:text-white"
+                              className="rounded-lg border border-slate-200 px-[20px] py-[50px] text-[16px] text-[#000] focus-visible:outline-none dark:text-white"
                             >
                               Link
                             </button>
                             <button
                               type="button"
-                              className="rounded-lg border border-slate-200 px-[20px] py-[50px] text-[16px] text-black focus-visible:outline-none dark:text-white"
+                              className="rounded-lg border border-slate-200 px-[20px] py-[50px] text-[16px] text-[#000] focus-visible:outline-none dark:text-white"
                             >
                               Link
                             </button>

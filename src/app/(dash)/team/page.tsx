@@ -24,12 +24,12 @@ export default function Page() {
         <form action="">
           <input
             type="text"
-            className="rounded-s-md border-b border-s border-t border-slate-200 px-[15px] py-[8px] text-[14px] text-black"
+            className="rounded-s-md border-b border-s border-t border-slate-200 px-[15px] py-[8px] text-[14px] text-[#000]"
             value="https://example.com/teams/invite/eHGJEj12FHDKSi"
           />
           <button
             type="submit"
-            className="rounded-e-md border border-slate-200 px-[15px] py-[8px] text-[14px] text-black"
+            className="rounded-e-md border border-slate-200 px-[15px] py-[8px] text-[14px] text-[#000]"
           >
             Copy link
           </button>
