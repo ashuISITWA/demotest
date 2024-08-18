@@ -1,6 +1,5 @@
 import { IconDeviceImac, IconMenu, IconMoon, IconSearch, IconSun } from '@tabler/icons-react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation';
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io'
@@ -223,14 +222,11 @@ const Header = () => {
       localStorage.setItem('theme', newTheme)
     }
   }
-  const router = useRouter();
-  const isHomePage = router.pathname === '/home';
+
 
   return (
     <>
-      <header className=
-      
-      {`${
+      <header className={`${
         isSticky ? 'fixed  shadow' : 'md:static'
       } transition-all duration-300 left-0 right-0 top-0 z-[300] block border-b border-slate-200 bg-white py-[10px] dark:bg-[#000]  md:border-none`}>
         <div
@@ -270,7 +266,7 @@ const Header = () => {
                   <span>Categories</span> <IoMdArrowDropdown />
                 </button>
               </div>
-              {!isHomePage && (
+           
               <div className="mx-auto hidden w-[400px] md:block">
                 <form action="">
                   <div className="flex items-center rounded-lg bg-[#F2F2F2]">
@@ -291,7 +287,7 @@ const Header = () => {
                   </div>
                 </form>
               </div>
- )}
+
               <div className="mt-auto flex flex-col gap-5 md:mt-0 md:flex-row md:items-center">
                 {/* drop color light dark */}
                 <div className="">
