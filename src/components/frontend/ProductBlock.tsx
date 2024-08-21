@@ -24,7 +24,7 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ items }) => {
     <>
       {items.map((item, index) => (
         <div className="col-span-1" key={index}>
-          <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+       <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
             <div className="block h-[200px]">
               <img src={item.imageUrl} alt={item.title} className="inline-block h-full w-full object-cover" />
             </div>
@@ -39,7 +39,7 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ items }) => {
                   {item.title}
                 </div>
               </Link>
-              <p className="text-[14px] leading-[20px] text-[#5b5e61] line-clamp-2">{item.des}</p>
+              <p className="text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1] line-clamp-2">{item.des}</p>
               <Link href="/">
                 <div className="flex items-center gap-[15px]">
                   <div className="flex-shrink-0">
@@ -72,7 +72,7 @@ const ProductBlock: React.FC<ProductBlockProps> = ({ items }) => {
                 ${item.price} <span className="font-normal italic line-through">${item.totalprice}</span>
               </h6>
               <Link href="/">
-                <div className="block rounded-lg bg-[#000] py-[8px] text-center text-white hover:bg-[#222] dark:bg-white dark:text-[#000] dark:hover:bg-[#cfcfcf]">
+                <div className="block rounded-lg bg-[#000] py-[8px] text-center text-white hover:bg-[#222] dark:bg-white dark:text-[#000] dark:hover:bg-[#cfcfcf] text-[14px]">
                   Buy Now
                 </div>
               </Link>

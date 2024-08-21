@@ -24,7 +24,7 @@ export default function Page() {
                 <h2 className="text-[30px] font-semibold leading-[30px] text-[#000] dark:text-white">
                   Astro Starter Kitu LaunchFast
                 </h2>
-                <h3 className="text-[22px] leading-[26px] text-[#5b5e61]">$75.00</h3>
+                <h3 className="text-[22px] leading-[26px] text-[#5b5e61] dark:text-[#b1b1b1]">$75.00</h3>
                 <p className="text-[16px] leading-[24px] text-[#000] dark:text-white">
                   High Quality Astro Starter Kit with built-in authentication flow, image uploads, analytics, payments,
                   email flows, and much more. Compatible with any Redis and Postgres database.
@@ -72,7 +72,7 @@ export default function Page() {
                           <div className="flex justify-end">
                           <button
                             type="submit"
-                            className="rounded-lg bg-[#000] px-[20px] py-[10px] text-white hover:bg-slate-800 dark:hover:bg-slate-400 dark:bg-white dark:text-[#000]"
+                            className="rounded-lg bg-[#000] px-[20px] py-[10px] text-white hover:bg-slate-800 dark:bg-white dark:text-[#000] dark:hover:bg-slate-800 dark:hover:text-white text-[16px]"
                           >
                             Pay Now
                           </button>

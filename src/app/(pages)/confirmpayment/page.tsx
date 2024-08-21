@@ -33,7 +33,7 @@ export default function Page() {
                     <h4 className="text-end text-[16px] font-semibold text-[#000] dark:text-white">$100.99 USD</h4>
                   </div>
                   <div className="col-span-1">
-                    <h4 className="text-[16px] font-semibold text-[#5b5e61]">Payment by Code</h4>
+                    <h4 className="text-[16px] font-semibold text-[#5b5e61] dark:text-[#b1b1b1]">Payment by Code</h4>
                   </div>
                   <div className="col-span-1">
                     <h4 className="text-end text-[16px] font-semibold text-[#000] dark:text-white">-$100.99 USD</h4>
@@ -47,7 +47,7 @@ export default function Page() {
                 </div>
                 <button
                   type="submit"
-                  className="rounded-lg bg-[#000] px-[20px] py-[10px] text-white hover:bg-slate-800 dark:bg-white dark:text-[#000] dark:hover:bg-slate-400"
+                  className="rounded-lg bg-[#000] px-[20px] py-[10px] text-white hover:bg-slate-800 dark:bg-white dark:text-[#000] dark:hover:bg-slate-800 dark:hover:text-white text-[16px]"
                 >
                   Confirm Payment
                 </button>

@@ -30,7 +30,7 @@ export default function Page() {
               <h3 className="text-[16px] font-medium text-[#000]">Problems getting an invite?</h3>
               <div className="flex gap-1">
                 <div className="flex-shrink-0">
-                  <IconPointFilled className="text-[#5b5e61]" />
+                  <IconPointFilled className="text-[#5b5e61] dark:text-[#b1b1b1]" />
                 </div>
                 <div className="flex-grow">
                   <p className="text-[14px] text-[#000]">
@@ -40,7 +40,7 @@ export default function Page() {
               </div>
               <div className="flex gap-1">
                 <div className="flex-shrink-0">
-                  <IconPointFilled className="text-[#5b5e61]" />
+                  <IconPointFilled className="text-[#5b5e61] dark:text-[#b1b1b1]" />
                 </div>
                 <div className="flex-grow">
                   <p className="text-[14px] text-[#000]">Enter only your GitHub username, not email.</p>

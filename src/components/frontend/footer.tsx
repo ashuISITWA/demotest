@@ -36,7 +36,7 @@ const Footer = () => {
   };
   return (
     <>
-      <footer className="block bg-white dark:bg-[#000]  border-t border-slate-200">
+      <footer className="block bg-white dark:bg-[#000]  border-t border-slate-200 dark:border-[#222324]">
         <div className="block py-[50px]">
           <div className="max-w-[1228px] px-[15px] mx-auto">
             <div className="flex flex-col md:flex-row gap-[30px] md:gap-[50px]">
@@ -54,31 +54,31 @@ const Footer = () => {
                     <div className="flex flex-col gap-[15px]">
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Next.js Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Node.js Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Angular Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Flask Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Svelte Boilerplates
                       </Link>
@@ -86,31 +86,31 @@ const Footer = () => {
                     <div className="flex flex-col gap-[15px]">
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Next.js Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Node.js Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Angular Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Flask Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Svelte Boilerplates
                       </Link>
@@ -118,31 +118,31 @@ const Footer = () => {
                     <div className="flex flex-col gap-[15px]">
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Next.js Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Node.js Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Angular Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Flask Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Svelte Boilerplates
                       </Link>
@@ -150,31 +150,31 @@ const Footer = () => {
                     <div className="flex flex-col gap-[15px]">
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Next.js Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Node.js Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Angular Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Flask Boilerplates
                       </Link>
                       <Link
                         href="/"
-                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]"
+                        className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]"
                       >
                         Svelte Boilerplates
                       </Link>
@@ -210,16 +210,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="block border-t border-slate-200 py-[15px]">
+        <div className="block border-t border-slate-200 dark:border-[#222324] py-[15px]">
           <div className="max-w-[1228px] px-[15px] mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div>
-                <p className="text-[14px] text-[#000] dark:text-[#5b5e61]">Copyright &copy; 2024</p>
+                <p className="text-[14px] text-[#000] dark:text-[#b1b1b1]">Copyright &copy; 2024</p>
               </div>
               <div className="flex items-center gap-3">   
-                <Link href="/"  className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]">Privacy policy</Link>
-                <Link href="/"  className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]">Terms of use </Link>
-                <Link href="/"  className="text-[14px] text-slate-500 hover:text-[#000] dark:text-white dark:hover:text-[#5b5e61]">Disclaimer</Link>
+                <Link href="/"  className="text-[14px] text-slate-500 hover:text-[#000] dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]">Privacy policy</Link>
+                <Link href="/"  className="text-[14px] text-slate-500 hover:text-[#000] dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]">Terms of use </Link>
+                <Link href="/"  className="text-[14px] text-slate-500 hover:text-[#000] dark:hover:text-[#5b5e61] dark:text-[#b1b1b1]">Disclaimer</Link>
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@ const Page = () => {
             <Image src={p1} alt="image" className="mx-auto h-[80px] w-[80px] rounded-full object-cover" />
             <div className="flex flex-col gap-[10px]">
               <h4 className="mx-auto text-[16px] leading-[20px] text-[#000] dark:text-white">Tony jack</h4>
-              <h4 className="mx-auto text-[14px] leading-[20px] text-[#5b5e61]">Web Designer</h4>
+              <h4 className="mx-auto text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">Web Designer</h4>
             </div>
             <div className="mx-auto flex items-center gap-3">
               <Link
@@ -48,7 +48,7 @@ const Page = () => {
             <h1 className="text-[30px] font-bold leading-[32px] text-[#000] dark:text-white">
               Cillum irure laboris occaecat labore. Consectetur pariatur commodo quis.
             </h1>
-            <p className="text-[16px] leading-[20px] text-[#5b5e61]">
+            <p className="text-[16px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
               Proident non occaecat dolore veniam excepteur. Est dolor consequat et nulla. Sint non sit nulla laboris
               est officia elit do. Dolor irure qui consequat excepteur elit.
             </p>
@@ -59,18 +59,20 @@ const Page = () => {
         <div className="max-w-[1228px] px-[15px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-[30px] mb-[50px]">
         <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#000]">New</h6>
+                           <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#385bb4] dark:bg-[#222c4c] dark:text-[#99a7ff]">
+                            New
+                          </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -112,20 +114,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000]">
+                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000] dark:bg-[#392a16] dark:text-[#d9ad42]">
                             Featured
                           </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -167,18 +169,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#000]">New</h6>
+                           <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#385bb4] dark:bg-[#222c4c] dark:text-[#99a7ff]">
+                            New
+                          </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -220,20 +224,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000]">
+                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000] dark:bg-[#392a16] dark:text-[#d9ad42]">
                             Featured
                           </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -275,18 +279,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#000]">New</h6>
+                           <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#385bb4] dark:bg-[#222c4c] dark:text-[#99a7ff]">
+                            New
+                          </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -328,20 +334,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000]">
+                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000] dark:bg-[#392a16] dark:text-[#d9ad42]">
                             Featured
                           </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -383,18 +389,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#000]">New</h6>
+                           <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#385bb4] dark:bg-[#222c4c] dark:text-[#99a7ff]">
+                            New
+                          </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -436,20 +444,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000]">
+                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000] dark:bg-[#392a16] dark:text-[#d9ad42]">
                             Featured
                           </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -491,18 +499,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#000]">New</h6>
+                           <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#385bb4] dark:bg-[#222c4c] dark:text-[#99a7ff]">
+                            New
+                          </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -544,20 +554,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000]">
+                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000] dark:bg-[#392a16] dark:text-[#d9ad42]">
                             Featured
                           </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -599,18 +609,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#000]">New</h6>
+                           <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#385bb4] dark:bg-[#222c4c] dark:text-[#99a7ff]">
+                            New
+                          </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -652,20 +664,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000]">
+                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000] dark:bg-[#392a16] dark:text-[#d9ad42]">
                             Featured
                           </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -707,18 +719,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#000]">New</h6>
+                           <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#385bb4] dark:bg-[#222c4c] dark:text-[#99a7ff]">
+                            New
+                          </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -760,20 +774,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000]">
+                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000] dark:bg-[#392a16] dark:text-[#d9ad42]">
                             Featured
                           </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -815,18 +829,20 @@ const Page = () => {
                     </div>
                   </div>{' '}
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#000]">New</h6>
+                           <h6 className="float-start rounded-full bg-[#f0f5ff] px-[6px] text-[12px] text-[#385bb4] dark:bg-[#222c4c] dark:text-[#99a7ff]">
+                            New
+                          </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -868,20 +884,20 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white dark:border-slate-500 dark:bg-slate-900 hover:border-slate-600 dark:hover:border-slate-400">
+                    <div className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white hover:border-slate-600 dark:border-[#1c1c1c] dark:bg-[#000] dark:hover:border-slate-400">
                       <div className="block h-[200px]">
                         <Image src={p1} alt="image" className="inline-block h-full w-full object-cover" />
                       </div>
                       <div className="flex flex-col gap-[10px] p-[15px]">
                         <Link href="/">
-                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000]">
+                          <h6 className="float-start rounded-full bg-[#fff3d0] px-[6px] text-[12px] text-[#000] dark:bg-[#392a16] dark:text-[#d9ad42]">
                             Featured
                           </h6>
                         </Link>
                         <Link href="/" className="text-[16px] font-semibold leading-[20px] text-[#000] dark:text-white">
                           Main Heading Link
                         </Link>
-                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61]">
+                        <p className="line-clamp-2 text-[14px] leading-[20px] text-[#5b5e61] dark:text-[#b1b1b1]">
                           Cupidatat ex non id eiusmod id reprehenderit ad incididunt.
                         </p>
                         <Link href="/" className="flex items-center gap-[15px]">
@@ -924,7 +940,7 @@ const Page = () => {
                   </div>
           </div>
           <div className="flex justify-center">
-            <div className="flex divide-x divide-solid border border-slate-200 rounded-md overflow-hidden">
+          <div className="flex divide-x divide-solid overflow-hidden rounded-md border border-slate-200 dark:border-[#1c1c1c] dark:divide-[#1c1c1c]">
               <button type='button' className='text-[#000] bg-white dark:text-white dark:bg-[#000] text-[14px] px-[20px] py-[10px] hover:bg-slate-100 dark:hover:bg-slate-800'>Previous</button>
               <button type='button' className='text-[#000] bg-white dark:text-white dark:bg-[#000] text-[14px] px-[20px] py-[10px] hover:bg-slate-100 dark:hover:bg-slate-800'>1</button>
               <button type='button' className='text-[#000] bg-white dark:text-white dark:bg-[#000] text-[14px] px-[20px] py-[10px] hover:bg-slate-100 dark:hover:bg-slate-800'>2</button>

@@ -239,7 +239,7 @@ const Header = () => {
           </div>
         </div>
         <div className="mx-auto max-w-[1228px] px-[15px]">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-[80px]">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-8">
             <div className="flex flex-shrink-0 justify-between md:justify-start">
               <Link href="/home" className="inline-block w-[100px]">
                 <Image src={logo} alt="logo" className="w-full" />
@@ -260,13 +260,13 @@ const Header = () => {
                 <button
                   type="button"
                   onClick={toggleClass1}
-                  className="flex items-center gap-2 text-[14px] text-[#000] dark:text-white"
+                  className="flex items-center font-medium gap-2 text-[14px] text-[#000] dark:text-white"
                 >
                   {' '}
                   <span>Categories</span> <IoMdArrowDropdown />
                 </button>
               </div>
-           
+{/*            
               <div className="mx-auto hidden w-[400px] md:block">
                 <form action="">
                   <div className="flex items-center rounded-lg bg-[#F2F2F2]">
@@ -286,16 +286,16 @@ const Header = () => {
                     </div>
                   </div>
                 </form>
-              </div>
+              </div> */}
 
-              <div className="mt-auto flex flex-col gap-5 md:mt-0 md:flex-row md:items-center">
+              <div className="mt-auto flex flex-col gap-[10px] md:mt-0 md:flex-row md:items-center">
                 {/* drop color light dark */}
-                <div className="">
-                  <button type="button" onClick={toggleClass2}>
-                    <IconDeviceImac stroke={2} className="w-[20px] text-[#000] dark:text-white" />
+                <div className=" relative">
+                  <button type="button" onClick={toggleClass2} className='p-[6px] hover:bg-[#ededed] rounded-md group'>
+                    <IconDeviceImac stroke={2} className="w-[18px] text-[#000]  dark:hover:text-black dark:text-white group-hover:dark:text-black" />
                   </button>
                   <div
-                    className={`absolute right-0 top-[40px] z-[33] min-w-[100px] rounded-lg border border-slate-200 bg-white p-[10px] shadow dark:bg-[#000] ${isActive2 ? 'block' : 'hidden'}`}
+                    className={`absolute left-1/2 -translate-x-1/2 top-[40px] z-[33] min-w-[100px] rounded-lg border border-slate-200 dark:border-[#1c1c1c] bg-white p-[6px] shadow dark:bg-[#000] ${isActive2 ? 'block' : 'hidden'}`}
                   >
                     <div className="flex flex-col justify-center gap-[2px] md:justify-end">
                       <button
@@ -310,7 +310,7 @@ const Header = () => {
                         onClick={() => handleThemeChange('dark')}
                       >
                         <IconMoon stroke={2} className="w-[20px] text-[#000] dark:text-white" />
-                        <span className="text-[14px] text-[#000] dark:text-white">dark</span>
+                        <span className="text-[14px] text-[#000] dark:text-white">Dark</span>
                       </button>
                       <button
                         className={`flex items-center gap-2 rounded-md p-2 ${theme === 'system' ? 'bg-gray-400' : ''}`}
@@ -324,7 +324,13 @@ const Header = () => {
                 </div>
                 <Link
                   href="/"
-                  className="rounded-md border border-[#e6e6e6] bg-white px-[15px] py-[6px] text-[14px] text-[#000] hover:bg-[#f9f9f9] text-center"
+                  className="rounded-md border border-[#ededed] bg-[#ededed] px-[15px] py-[6px] text-[14px] text-[#000] hover:bg-[#ededed] text-center"
+                >
+                  Sell
+                </Link>
+                <Link
+                  href="/"
+                  className="rounded-md bg-[#000] px-[15px] py-[6px] text-[14px] text-white hover:bg-[#f9f9f9] hover:text-black dark:bg-slate-900 dark:hover:text-white text-center"
                 >
                   Login
                 </Link>
